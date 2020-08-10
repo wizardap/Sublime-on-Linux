@@ -27,11 +27,11 @@ int get(int l, int r)
 int main()
 {
 	SYNC;
-	/*#ifndef ONLINE_JUDGE
-		freopen("/home/steven/temp/input.txt", "r", stdin);
-		freopen("/home/steven/temp/error.txt", "w", stderr);
-		freopen("/home/steven/temp/output.txt", "w", stdout);
-	#endif*/
+#ifndef ONLINE_JUDGE
+	freopen("/home/steven/temp/input.txt", "r", stdin);
+	freopen("/home/steven/temp/error.txt", "w", stderr);
+	freopen("/home/steven/temp/output.txt", "w", stdout);
+#endif
 	cin >> n >> q;
 	for (int i = 1; i <= n; i++)
 		cin >> x, f[i][0] = x;
